@@ -3,7 +3,6 @@ Salem package
 """
 from __future__ import division
 
-import os
 from os import path
 from os import makedirs
 import sys
@@ -43,9 +42,6 @@ if not path.exists(download_dir):
 sample_data_gh_commit = '57e6d694aa470b967336f5ca2d4fc743c5c8efd6'
 sample_data_dir = path.join(cache_dir, 'salem-sample-data-' +
                             sample_data_gh_commit)
-
-print(cache_dir)
-
 
 # python version
 python_version = 'py3'
