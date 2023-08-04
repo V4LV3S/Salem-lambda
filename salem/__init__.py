@@ -32,7 +32,7 @@ def lazy_property(fn):
 wgs84 = pyproj.Proj(proj='latlong', datum='WGS84')
 
 # Path to the cache directory
-cache_dir = path.join(path.expanduser('tmp'), '.salem_cache')
+cache_dir = path.join(path.expanduser('/tmp/'), '.salem_cache')
 if not path.exists(cache_dir):
     makedirs(cache_dir)
 download_dir = path.join(cache_dir, 'downloads')
